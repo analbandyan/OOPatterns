@@ -1,6 +1,9 @@
 package com.patterns.singleton;
 
+import com.patterns.singleton.impl.Nton;
 import com.patterns.singleton.impl.SingletonClassic;
+
+import java.util.stream.Stream;
 
 import static java.lang.System.out;
 
@@ -8,6 +11,7 @@ public class SingletonRunner {
 
     public static void run() throws Exception {
         test();
+//        nTonTest();
     }
 
     private static void test() {
@@ -33,6 +37,12 @@ public class SingletonRunner {
 
         out.println("instance 1 = " + inst1);
         out.println("instance 2 = " + inst2);
+    }
+
+    private static void nTonTest() {
+        Stream.generate(Nton::getInstance)
+                .limit(20)
+                .forEach(instance -> out.println("Nton " + instance.getInstanceNum()));
 
     }
 

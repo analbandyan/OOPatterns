@@ -12,10 +12,10 @@ public class SingletonSynched {
 
     public static SingletonSynched getInstance() {
         out.println("inside MyClassSynched.getInstance");
-        if(instance == null) {
+        if (instance == null) {
 
-            synchronized(SingletonSynched.class) {
-                if(instance == null) {
+            synchronized (SingletonSynched.class) {
+                if (instance == null) {
                     instance = new SingletonSynched();
                 }
             }

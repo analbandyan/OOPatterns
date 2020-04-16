@@ -7,20 +7,20 @@ public class SingletonClassic {
     private static SingletonClassic instance;
 
     private SingletonClassic() {
-        out.println("inside MyClass constructor");
+        out.println("inside SingletonClassic constructor");
     }
 
     public static SingletonClassic getInstance() {
-        out.println("inside MyClass.getInstance");
+        out.println("inside SingletonClassic.getInstance");
 
-        if(instance == null) {
+        if (instance == null) {
             instance = new SingletonClassic();
         }
         return instance;
     }
 
     public static void otherMethod() {
-        out.println("inside MyClass.otherMethod");
+        out.println("inside SingletonClassic.otherMethod");
     }
 
 }
