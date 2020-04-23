@@ -1,15 +1,17 @@
-package com.patterns.singleton;
+package com.patterns.pattern.singleton;
 
-import com.patterns.singleton.impl.Nton;
-import com.patterns.singleton.impl.SingletonClassic;
+import com.patterns.pattern.singleton.impl.Nton;
+import com.patterns.pattern.singleton.impl.SingletonClassic;
+import com.patterns.run.PatternRunner;
 
 import java.util.stream.Stream;
 
 import static java.lang.System.out;
 
-public class SingletonRunner {
+public class SingletonRunner implements PatternRunner {
 
-    public static void run() throws Exception {
+    @Override
+    public void run() {
         test();
 //        nTonTest();
     }

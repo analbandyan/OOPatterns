@@ -1,4 +1,4 @@
-package com.patterns.singleton.impl;
+package com.patterns.pattern.singleton.impl;
 
 import java.util.ArrayList;
 import java.util.List;

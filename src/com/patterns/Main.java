@@ -1,11 +1,13 @@
 package com.patterns;
 
-import com.patterns.singleton.SingletonRunner;
+import com.patterns.run.Pattern;
+
+import static com.patterns.run.PatternRunnerFactory.createPatternRunner;
 
 public class Main {
 
-    public static void main(String[] args) throws Exception {
-        SingletonRunner.run();
+    public static void main(String[] args) {
+        createPatternRunner(Pattern.STRATEGY).run();
     }
 
 }

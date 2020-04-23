@@ -1,4 +1,4 @@
-package com.patterns.singleton;
+package com.patterns.pattern.singleton;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
