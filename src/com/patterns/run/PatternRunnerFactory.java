@@ -1,5 +1,6 @@
 package com.patterns.run;
 
+import com.patterns.pattern.adapter.AdapterRunner;
 import com.patterns.pattern.singleton.SingletonRunner;
 import com.patterns.pattern.strategy.StrategyRunner;
 
@@ -11,6 +12,8 @@ public class PatternRunnerFactory {
                 return new SingletonRunner();
             case STRATEGY:
                 return new StrategyRunner();
+            case ADAPTER:
+                return new AdapterRunner();
             default:
                 throw new RuntimeException("Unknown pattern " + pattern);
         }

@@ -1,6 +1,6 @@
 package com.patterns.pattern.strategy;
 
-import com.patterns.pattern.strategy.impl.*;
+import com.patterns.pattern.strategy.impl.Soldier;
 import com.patterns.pattern.strategy.impl.behaviors.attack.AttackBoxer;
 import com.patterns.pattern.strategy.impl.behaviors.attack.AttackShooter;
 import com.patterns.pattern.strategy.impl.behaviors.move.BoostRun;
@@ -13,8 +13,8 @@ import com.patterns.run.PatternRunner;
 
 import java.util.List;
 
-import static java.lang.System.out;
 import static java.lang.String.format;
+import static java.lang.System.out;
 
 public class StrategyRunner implements PatternRunner {
 
