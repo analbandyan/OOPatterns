@@ -11,7 +11,7 @@ public class ElementsPrinter {
     }
 
     public void printElements() {
-        while(iterator.hasNext()) {
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
     }

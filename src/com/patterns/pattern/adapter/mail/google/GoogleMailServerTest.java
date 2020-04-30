@@ -12,7 +12,7 @@ final public class GoogleMailServerTest implements GoogleMailServer {
                 "asdfghjkl@spam.com", "Hey, this is not a spam!",
                 "teammate@old-company.com", "Hey bro, may you want to come back?",
                 "hire-me@recruiter.com", "Hello dear super duper professional, I want to recruit you."
-                );
+        );
     }
 
     @Override

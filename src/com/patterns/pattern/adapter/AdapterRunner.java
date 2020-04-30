@@ -31,7 +31,7 @@ public class AdapterRunner implements PatternRunner {
         outlookClient.performEmailActivity();
 
         out.println("\nOutlook client using google email server");
-        ExchangeGoogleMailServerAdapter exchangeGoogleMailServerAdapter =  new ExchangeGoogleMailServerAdapter(new GoogleMailServerTest());
+        ExchangeGoogleMailServerAdapter exchangeGoogleMailServerAdapter = new ExchangeGoogleMailServerAdapter(new GoogleMailServerTest());
         OutlookClient outlookClient2 = new OutlookClient(exchangeGoogleMailServerAdapter);
         outlookClient2.performEmailActivity();
     }
@@ -49,11 +49,11 @@ public class AdapterRunner implements PatternRunner {
         elementsPrinter2.printElements();
     }
 
-    private static Iterator<Integer> getElements(Integer ...elements) {
+    private static Iterator<Integer> getElements(Integer... elements) {
         return List.of(elements).iterator();
     }
 
-    private static Enumeration<Integer> getElements2(Integer ...elements) {
+    private static Enumeration<Integer> getElements2(Integer... elements) {
         return new Vector<>(
                 List.of(elements)
         ).elements();

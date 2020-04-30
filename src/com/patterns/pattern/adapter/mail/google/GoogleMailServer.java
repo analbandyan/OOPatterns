@@ -6,6 +6,7 @@ public interface GoogleMailServer {
 
     /**
      * Fetches unread email details
+     *
      * @return email sender addresses mapped to email subjects
      */
     Map<String, String>/*PHP associative array*/ fetchUnreadEmailsDetails();

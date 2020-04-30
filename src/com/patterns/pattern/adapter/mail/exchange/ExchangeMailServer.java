@@ -4,6 +4,7 @@ public interface ExchangeMailServer {
 
     /**
      * Fetches unread email sender addresses
+     *
      * @return email sender addresses
      */
     String[]/*PHP array*/ listUnreadEmailSenders();

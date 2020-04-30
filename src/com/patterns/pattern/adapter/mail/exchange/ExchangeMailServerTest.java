@@ -5,7 +5,7 @@ import static java.lang.System.out;
 final public class ExchangeMailServerTest implements ExchangeMailServer {
     @Override
     public String[] listUnreadEmailSenders() {
-        return new String[] {"schoolmate@school.com", "classmate@class.com", "teammate@team.com"};
+        return new String[]{"schoolmate@school.com", "classmate@class.com", "teammate@team.com"};
     }
 
     @Override
