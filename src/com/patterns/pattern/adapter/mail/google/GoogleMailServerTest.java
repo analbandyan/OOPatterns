@@ -24,7 +24,7 @@ final public class GoogleMailServerTest implements GoogleMailServer {
     public GoogleMailToSend composeEmail(String recipientAddress, String subject, String body) {
         GoogleMailToSend googleMailToSend = new GoogleMailToSend(recipientAddress, subject, body);
         out.println("composed email " + googleMailToSend);
-        return null;
+        return googleMailToSend;
     }
 
     @Override

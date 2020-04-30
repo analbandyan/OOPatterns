@@ -6,7 +6,7 @@ final public class GoogleMailToSend {
     private final String subject;
     private final String body;
 
-    GoogleMailToSend(String recipientAddress, String subject, String body) {
+    public GoogleMailToSend(String recipientAddress, String subject, String body) {
         this.recipientAddress = recipientAddress;
         this.subject = subject;
         this.body = body;
