@@ -1,6 +1,5 @@
 package com.patterns.pattern.bridge.persistence;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -9,7 +8,8 @@ import static java.lang.System.out;
 public class PersistenceCaching implements Persistence {
 
     private final PersistenceImplementor persistenceImplementor;
-    private final Map<String, Object> cache = new LinkedHashMap<>();//ignore cache capacity
+    //ignoring "mock" cache capacity
+    private final Map<String, Object> cache = new LinkedHashMap<>();
 
     public PersistenceCaching(PersistenceImplementor persistenceImplementor) {
         this.persistenceImplementor = persistenceImplementor;
