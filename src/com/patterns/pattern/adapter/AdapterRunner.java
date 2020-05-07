@@ -19,9 +19,9 @@ public class AdapterRunner implements PatternRunner {
 
     @Override
     public void run() {
-        out.println("Demoing email adapter");
+        out.println("Demoing email adapter\n");
         demoAdapterEmail();
-        out.println("\nDemoing iteration adapter");
+        out.println("\n\nDemoing iteration adapter\n");
         demoAdapterIterator();
     }
 
