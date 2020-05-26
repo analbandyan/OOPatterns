@@ -20,7 +20,7 @@ public class FacadeRunner implements PatternRunner {
         out.println("Client came back home with friends, and now they are going to have a fantastic party at home.");
         //turn on party mode
 
-        out.println("Party is finished, Client is totally drunk, he is going to sleep like a beer till the morning.");
+        out.println("Party is finished, Client is totally drunk, he is going to sleep like a bear till the morning.");
         //turn on rest mode
 
 
