@@ -4,5 +4,6 @@ public enum Pattern {
     SINGLETON,
     STRATEGY,
     ADAPTER,
-    BRIDGE
+    BRIDGE,
+    FACADE
 }
