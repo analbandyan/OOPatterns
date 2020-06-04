@@ -7,7 +7,7 @@ import static com.patterns.run.PatternRunnerFactory.createPatternRunner;
 public class Main {
 
     public static void main(String[] args) {
-        createPatternRunner(Pattern.BRIDGE).run();
+        createPatternRunner(Pattern.FACADE).run();
     }
 
 }

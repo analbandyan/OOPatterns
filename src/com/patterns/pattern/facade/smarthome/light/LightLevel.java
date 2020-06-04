@@ -1,4 +1,4 @@
-package com.patterns.pattern.facade.light;
+package com.patterns.pattern.facade.smarthome.light;
 
 public enum LightLevel {
 
