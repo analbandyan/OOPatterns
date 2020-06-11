@@ -9,7 +9,7 @@ import com.patterns.pattern.decorator.foodmarket.decorator.SauceToppingDecorator
 import com.patterns.pattern.decorator.foodmarket.decorator.TakeAwayWrapperDecorator;
 import com.patterns.pattern.decorator.foodmarket.food.ChickenBurger;
 import com.patterns.pattern.decorator.foodmarket.food.Food;
-import com.patterns.pattern.decorator.foodmarket.food.HammSandwich;
+import com.patterns.pattern.decorator.foodmarket.food.HamSandwich;
 import com.patterns.run.PatternRunner;
 import static java.lang.System.out;
 
@@ -98,7 +98,7 @@ public class DecoratorRunner implements PatternRunner {
     }
 
     private static Food createFood2() {
-        Food food = new HammSandwich();
+        Food food = new HamSandwich();
 
         food = new SaltToppingDecorator(food);
         food = new SaltToppingDecorator(food);
