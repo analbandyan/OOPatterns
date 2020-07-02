@@ -4,6 +4,7 @@ import com.patterns.pattern.adapter.AdapterRunner;
 import com.patterns.pattern.bridge.BridgeRunner;
 import com.patterns.pattern.decorator.DecoratorRunner;
 import com.patterns.pattern.facade.FacadeRunner;
+import com.patterns.pattern.factorymethod.FactoryMethodRunner;
 import com.patterns.pattern.singleton.SingletonRunner;
 import com.patterns.pattern.strategy.StrategyRunner;
 import com.patterns.pattern.templatemethod.TemlpateMethodRunner;
@@ -26,6 +27,8 @@ public class PatternRunnerFactory {
                 return new DecoratorRunner();
             case TEMPLATE_METHOD:
                 return new TemlpateMethodRunner();
+            case FACTORY_METHOD:
+                return new FactoryMethodRunner();
             default:
                 throw new RuntimeException("Unknown pattern " + pattern);
         }
