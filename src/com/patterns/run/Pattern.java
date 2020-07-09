@@ -8,5 +8,6 @@ public enum Pattern {
     FACADE,
     DECORATOR,
     TEMPLATE_METHOD,
-    FACTORY_METHOD
+    FACTORY_METHOD,
+    ABSTRACT_FACTORY
 }

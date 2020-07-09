@@ -1,5 +1,6 @@
 package com.patterns.run;
 
+import com.patterns.pattern.abstractfactory.AbstractFactoryRunner;
 import com.patterns.pattern.adapter.AdapterRunner;
 import com.patterns.pattern.bridge.BridgeRunner;
 import com.patterns.pattern.decorator.DecoratorRunner;
@@ -29,6 +30,8 @@ public class PatternRunnerFactory {
                 return new TemlpateMethodRunner();
             case FACTORY_METHOD:
                 return new FactoryMethodRunner();
+            case ABSTRACT_FACTORY:
+                return new AbstractFactoryRunner();
             default:
                 throw new RuntimeException("Unknown pattern " + pattern);
         }
